@@ -1,14 +1,13 @@
-const num: number = +process.argv[2];
-console.log(2123);
 
-function fizzbuzz(num: number): string {
-  if (num % 15 == 0) {
-    return "FizzBuzz";
-  } else if (num % 3 == 0) {
-    return "Fizz";
-  } else if (num % 5 == 0) {
-    return "Buzz";
-  }
-  return num.toString();
+
+function Main(input: any) {
+  input = input.split("\n"); //[a, b c, s]
+  console.log(input)
 }
 
+Main(`a
+b c
+s
+`);
+
+// Main(require("fs").readFileSync("/dev/stdin", "utf8")); 
