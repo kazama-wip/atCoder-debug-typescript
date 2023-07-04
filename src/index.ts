@@ -1,13 +1,11 @@
 
 
 function Main(input: any) {
-  input = input.split("\n"); //[a, b c, s]
-  console.log(input)
+  const inputs: String[] = input.split("");
+  const targetArray = inputs.filter(e => { if (Number(e)) return e });
+  console.log(targetArray.length)
 }
 
-Main(`a
-b c
-s
-`);
+Main(`101`);
 
 // Main(require("fs").readFileSync("/dev/stdin", "utf8")); 
