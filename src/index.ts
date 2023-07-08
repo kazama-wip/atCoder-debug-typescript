@@ -1,13 +1,8 @@
-
-
-function Main(input: any) {
-  input = input.split("\n"); //[a, b c, s]
+function Main(input: string | number | bigint) {
+  const persedInput = input //.. split("\n")
   console.log(input)
 }
 
-Main(`a
-b c
-s
-`);
+Main(``);
 
 // Main(require("fs").readFileSync("/dev/stdin", "utf8")); 
